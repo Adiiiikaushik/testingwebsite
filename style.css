@@ -12,6 +12,7 @@ body{
     background: #080808;
     color: white;
     overflow-x:hidden;
+    
 }
 #header{
     width: 100%;
@@ -77,6 +78,7 @@ nav ul li a:hover::after{
     margin-top: 10%;
     margin-left: 00%;
     font-size: 30px;
+   
 
 }
 
@@ -339,6 +341,13 @@ hr{
 .ivm:hover  {
     background:#ef1f10;
     transform: translateY(-10px);
+    
+    }
+    .header-text{
+        margin-top: 10%;
+        margin-left: 00%;
+        font-size: 30px;
+        text-align: center;
     
     }
 }       
