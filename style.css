@@ -218,9 +218,11 @@ td{
 .submit{
     font-family: bold;
     font-size: large;
+    font-weight: 100;
     width: auto;
     height: auto;
-    background-color: rgb(255, 0, 0);
+    background:  -webkit-linear-gradient(#d3bc47, #f86f2a);
+    padding: 20px;
 }
 hr{
     background-color: #f82424;
@@ -316,4 +318,27 @@ hr{
    .exp .subtitle{
     font-size: 40px;
    }
+   .ivm{
+   
+    color: white;
+    text-align:center;
+    /* margin: 5vh 5vw; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    /* grid-gap: 40px; */
+    margin-top: 25px;
+    background:  -webkit-linear-gradient(#d3bc47, #f86f2a);
+    padding: 20px;
+    font-size: 20px;
+    width:auto;
+    font-weight: 300;
+    border-radius: 12px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.ivm:hover  {
+    background:#ef1f10;
+    transform: translateY(-10px);
+    
+    }
 }       
