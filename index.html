@@ -123,6 +123,9 @@
         <span id="mng" class="hello"></span>
 
 </div>
+<div class="hello">
+<span id="mng"></span>
+</div>
 </div>
 
 
@@ -138,7 +141,171 @@ const mng = document.getElementById("mng")
       .then(response =>{
         mng.innerHTML = "Message sent successfully"
         setTimeout(function(){
-            msg.innerHTML = ""
+            mng.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+    //    .then(location.reload())
+      .catch(error => console.error('Error!', error.message))
+
+ })
+ </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>AcadHub.in</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c52d083dd.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div id="containers" class="containers">
+            <nav>
+                <img src="images/logoo.jpg" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#services">Classes</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            </div>
+            <div class="header-text">
+                <p class="web">Padhai with Moj Masti😄</p>
+            <h1>India's <span>Fastest</span> <br> growing learning<br> Platform.</h1>
+            <!-- <p><img src="images/pixc.jpg" alt="" class="hub"></p> -->
+            </div>
+            
+        </div>
+    </div>
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">Select Your Class</h1>
+        <div class="ser">
+            <div>
+                <a href="https://www.youtube.com/watch?v=0acYh7mk5qQ&list=PLUGFV_9Qjs_Mb02jkLrlUDM4vyyWoaCsp" style=color:white><h2>Class 8</h2></a>
+            </div>
+            <div>
+               <a href="https://www.youtube.com/watch?v=1i4ARcE9JXw&list=PLUGFV_9Qjs_NXwYkzv-6sIgczvdWMVtFa" style="color:white"> <h2>Class 7</h2></a>
+            </div>
+            <div>
+               <a href="https://www.youtube.com/watch?v=cskxysTeb1w&list=PLUGFV_9Qjs_MZBErPb4PhrdlpnhCirMgj" style="color:white"><h2>Class 6</h2></a> 
+            </div>
+            <div>
+               <a href="https://www.youtube.com/watch?v=HyeaZnm_ekM&list=PLUGFV_9Qjs_Mcg_mb1svHTQaWv2ttU9gu" style="color:white"> <h2>Class 5</h2></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/watch?v=Q5cZI2qZNxU&list=PLUGFV_9Qjs_NgIpw3A0ZagWwdavGkNH4L" style="color: white"><h2>Class 4</h2></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/watch?v=G4dEIa1c_GE&list=PLUGFV_9Qjs_PU5g-cJcoYLYHIZpiMWSum" style="color:white"><h2>Class 3</h2></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="explore">
+    <div class="exp">
+        <h1 class="subtitle">Explore</h1>
+        <div class="nvm">
+            <div>
+                <a href="" style="color:black"><h2>NCERT BOOKS</h2></a>
+            </div>
+            <div>
+                <a href=""style="color:black"><h2>NCERT SOLUTION</h2></a>
+            </div>
+            <div>
+                <a href=""style="color:black"><h2>IMPORTANT QUESTIONS</h2></a>
+            </div>
+            <div>
+                <a href="#services"style="color:black"><h2>NCERT EXPLANATION</h2></a>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div id="contact">
+    <div class="cont">
+        <div class="row">
+            <div class="contac">
+                <h1 class="sub">Follow Us</h1>
+                <br><br><br><p>aalok6680@gmail.com</p>
+                <div class="icons">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC5Oox6qwbzuQxrmEjLV060w"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div id="feedback">
+<div class="rvp">
+    
+        <form name="submit-to-google-sheet">
+            <h1 class="ivm">Feedback Form</h1>
+               <p class="label"> Any Feedback or Queries for us</p>
+            <br>
+            
+            <div class="feed">
+             <p class="fnm">Fullname</p>
+                <input type="text" name="Fullname" placeholder="your full name" required class="you">
+               </div>
+                <br>
+                <div class="toll">
+                    <p class="msg">Message</p>
+                    <textarea input type="text" name="Message" placeholder="Write your feedback or queries here...." required class="ahem"></textarea>
+                </div>
+                
+                <br><br>
+               <div class="subm">
+                    <button type="submit" value="submit" class="submit">Submit</button>
+                </div>
+           
+            </div>
+        </form> 
+        <span id="mng" class="hello"></span>
+
+</div>
+<div class="hello">
+<span id="mng"></span>
+</div>
+</div>
+
+
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzrAWxFKkNVyyfhGP850uftiygkgAE1v04vQT0m-EUvDG9PqWzhBLgK_bIBzkz1HjR4hw/exec'
+  const form = document.forms['submit-to-google-sheet']
+const mng = document.getElementById("mng")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     
+      .then(response =>{
+        mng.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            mng.innerHTML = ""
         },5000)
         form.reset()
       })
