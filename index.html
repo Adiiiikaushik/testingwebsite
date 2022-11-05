@@ -17,10 +17,10 @@
 
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#explore">Explore</a></li>
                     <li><a href="#services">Classes</a></li>
-                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#explore">Explore</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -37,7 +37,7 @@
 <div id="services">
     <div class="container">
         <h1 class="subtitle">Select Your Class</h1>
-        <div class="services-list">
+        <div class="ser">
             <div>
                 <a href="https://www.youtube.com/watch?v=0acYh7mk5qQ&list=PLUGFV_9Qjs_Mb02jkLrlUDM4vyyWoaCsp" style=color:white><h2>Class 8</h2></a>
             </div>
@@ -97,130 +97,57 @@
 
 <div id="feedback">
 <div class="rvp">
-    <table>
+    
         <form name="submit-to-google-sheet">
             <h1 class="ivm">Feedback Form</h1>
-            <!-- <div class="slideshow-container">
+               <p class="label"> Any Feedback or Queries for us</p>
+            <br>
             
-            <div class="mySlides">
-              <img src="images/comment1.jpg">
-              
-            </div>
-            
-            <div class="mySlides">
-              <img src="images/comment2.jpg">
-              
-            </div>
-            
-            <div class="mySlides">
-              <img src="images/comment3.jpg">
-              
-             </div>
-              <div class="mySlides">
-                <img src="images/comment4.jpg">
-            </div>
-            
-            </div> -->
-            <!-- <br> -->
-            
-            <!-- <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div> 
-        -->
-        
-            <tr>
-                <td colspan="2">
-                <label>
-                    Any Feedback or Queries for us
-                </label>
-                <!-- <hr> -->
-                <br>
-<!--                 
-                <input type="radio" name="rate" value="bad">Good
-                <input type="radio" name="rate" value="bad">Bad
-                <input type="radio" name="rate" value="bad">Average -->
-                
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Fullname*</label>
-                <br>
+            <div class="feed">
+             <p class="fnm">Fullname</p>
                 <input type="text" name="Fullname" placeholder="your full name" required class="you">
-                </td>
-                <td>
-                    <label>E-mail*</label>
+               </div>
                 <br>
-                <input type="email" name="email" placeholder="your email" required class="you">
-                </td>  
-            </tr>
-            <tr>
-                <td>
-                    <label>Age*</label>
-                <br>
-                <input type="number" name="Age" placeholder="your age" required class="you">
-                </td>
-                <td>
-                    <label>Phone*</label>
-                <br>
-                <input type="text" name="Phone" placeholder="your phone number" required class="you">
-                </td>  
-            </tr>
-            <tr>
-                <td>
-                    <label>Message</label>
-                <br>
-                <textarea input type="text" name="Message" placeholder="Write your feedback or queries here...."></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                <div class="toll">
+                    <p class="msg">Message</p>
+                    <textarea input type="text" name="Message" placeholder="Write your feedback or queries here...." required class="ahem"></textarea>
+                </div>
+                
+                <br><br>
+               <div class="subm">
                     <button type="submit" value="submit" class="submit">Submit</button>
-                </td>
-            </tr>
+                </div>
+           
+            </div>
         </form> 
-    </table> 
+        <span id="mng" class="hello"></span>
+
 </div>
 </div>
 
 
 
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxFsfD9ettnK-qQSuYpz7i3qPA5t1G7W-pkoYfz3rBLfcd7WsWpeoJcxLLJQjIVrGTR/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzrAWxFKkNVyyfhGP850uftiygkgAE1v04vQT0m-EUvDG9PqWzhBLgK_bIBzkz1HjR4hw/exec'
   const form = document.forms['submit-to-google-sheet']
-
+const mng = document.getElementById("mng")
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(location.reload())
+     
+      .then(response =>{
+        mng.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+    //    .then(location.reload())
       .catch(error => console.error('Error!', error.message))
 
  })
  </script>
- <script>
-let ;slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlidesfade");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); 
-}
-
-</script>
 <script>
     var sidemeu = document.getElementById("sidemenu");
     function openmenu(){
