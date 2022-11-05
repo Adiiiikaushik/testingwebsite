@@ -264,7 +264,7 @@ hr{
        }
        .hello{
         color:#fbf8f8;
-        margin-top: 120px;
+        margin-top:-80px;
         display: block;
         text-align: center;
        }
@@ -329,4 +329,10 @@ hr{
         text-align: center;
     
     }
+    .hello{
+        color:#fbf8f8;
+        margin-top:120px;
+        display: block;
+        text-align: center;
+       }
 }       
