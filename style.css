@@ -309,6 +309,9 @@ hr{
             left:25px; 
             cursor:pointer;
     }
+     #sidemenu{
+        border-bottom-left-radius:50px ;   
+    }
     .container .subtitle{
         font-size: 40px;
     }
