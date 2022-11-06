@@ -6,6 +6,7 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>AcadHub.in</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/7c52d083dd.js" crossorigin="anonymous"></script>
     
 </head>
@@ -95,6 +96,19 @@
     </div>
 </div>
 
+    <div class="co">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/comment1.jpg"></div>
+            <div class="swiper-slide"><img src="images/comment2.jpg"></div>
+            <div class="swiper-slide"><img src="images/comment3.jpg"></div>
+            <div class="swiper-slide"><img src="images/comment4.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+    </div>
+</div>
 <div id="feedback">
 <div class="rvp">
     
@@ -163,6 +177,28 @@ const sub_btn = document.getElementsByClassName("submit")[0];
     function closemenu(){
         sidemeu.style.right="-200px";
     }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    autoplay:{
+        delay:5000,
+        disableOnInteraction:false,
+    },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 </script>
 </body>
 </html>
