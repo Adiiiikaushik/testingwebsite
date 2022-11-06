@@ -9,7 +9,7 @@ html{
 }
 body{
 
-    background: #080808;
+    background: black;
     color: white;
     overflow-x:hidden;
 }
@@ -278,14 +278,14 @@ hr{
         margin-left: 410px;
     }
 
-    *{
+    /* *{
         margin:0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
     .co{
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         display:flex;
         align-items: center;
         justify-content: center;
