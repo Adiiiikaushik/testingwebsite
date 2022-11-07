@@ -16,7 +16,6 @@
         <div id="containers" class="containers">
             <nav>
                 <ul id="sidemenu">
-                    <!-- <div class="yoho"> -->
                     <li><a href="#header">Home</a></li>
                     <li><a href="#services">Classes</a></li>
                     <li><a href="#explore">Explore</a></li>
@@ -25,9 +24,10 @@
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
-            <!-- </div> -->
+           
+                <img src="images/logoo1.jpg" class="logo" alt="">
             </nav>
-            <img src="images/logoo1.jpg" class="logo">
+           
             </div>
             <div class="header-text">
                 <p class="web">Padhai with Moj Masti😄</p>
@@ -170,11 +170,11 @@ const mng = document.getElementById("mng")
 <script>
     var sidemeu = document.getElementById("sidemenu");
     function openmenu(){
-        sidemeu.style.right="0";
+        sidemeu.style.left="0";
     
     }
     function closemenu(){
-        sidemeu.style.right="-200px";
+        sidemeu.style.left="-200px";
     }
 </script>
 
