@@ -115,6 +115,8 @@ margin-top:  20px;
 .ser div{
     background:  -webkit-linear-gradient(#d3bc47, #f86f2a);
     padding: 40px;
+    margin-left:2%;
+    margin-right:2%;
     font-size: 13px;
     font-weight: 300;
     border-radius: 14px;
@@ -148,6 +150,8 @@ transform: translateY(-10px);
     grid-gap: 40px;
     margin-top: 50px;
     text-align:center;
+    margin-left:1%;
+    margin-right:1%;
 }
 .nvm div{
     background:  -webkit-linear-gradient(#d3bc47, #f86f2a);
@@ -400,6 +404,7 @@ hr{
         border: 2px solid rgb(246, 246, 247);
         padding: .5em;
         background-color:  #4e392f;
+        margin-top: 10px;
     }
     .header-text{
         margin-top: 10%;
@@ -426,7 +431,7 @@ hr{
         display:flex;
         align-items: center;
         justify-content: center;
-       
+       margin-top: -25px;
     }
     .swiper{
         width:80%;
@@ -447,5 +452,9 @@ hr{
     }
     .swiper .swiper-pagination-bullet-active{
         background: #fff;
+    }
+    .abra{
+        text-align: center;
+        margin-top: 30px;
     }
 }       
