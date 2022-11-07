@@ -47,8 +47,8 @@ nav{
 .logo{
     width: 10vw;
     height:auto;
-    margin-top: -40px;
-    margin-left: 90%;
+    /* margin-top: -40px; */
+    /* margin-left: 90%; */
 }
 
 .container{
@@ -340,8 +340,8 @@ hr{
         .logo{
             width:25vw;
             height:auto;
-            margin-top: -90px;
-            margin-left: 70%;
+            /* margin-top: -90px; */
+            /* margin-left: 70%; */
         }
         .header-text{
             padding-top:12px ;
@@ -352,6 +352,7 @@ hr{
             font-size:25px;
             margin-right:20px;
             cursor: pointer;
+
         }
          nav ul{
             background:#fb381b;
@@ -376,7 +377,8 @@ hr{
     }
   
     #sidemenu{
-        border-bottom-left-radius:50px ;   
+    
+        border-bottom-right-radius:50px ;   
     }
     .container .subtitle{
         font-size: 40px;
