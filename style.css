@@ -33,7 +33,7 @@ body{
     padding: 5px 3%;
     position:fixed;
     top:0;
-    /* z-index: 50; */
+    z-index: 50;
     background-color: #000000;
     
 }
@@ -300,6 +300,7 @@ hr{
         display:flex;
         align-items: center;
         justify-content: center;
+
     
     }
     .swiper{
@@ -318,6 +319,10 @@ hr{
     }
     .swiper .swiper-pagination-bullet-active{
         background: #fff;
+    }
+    .abra{
+        text-align: center;
+        margin-top: 30px;
     }
 
        @media only screen and (max-width:850px){
@@ -342,7 +347,7 @@ hr{
         
         }
         .logo{
-            width:25vw;
+            width:50vw;
             height:auto;
             /* margin-top: -90px; */
             /* margin-left: 70%; */
@@ -431,7 +436,7 @@ hr{
         display:flex;
         align-items: center;
         justify-content: center;
-       margin-top: -25px;
+       margin-top: -12%;
     }
     .swiper{
         width:80%;
@@ -456,5 +461,13 @@ hr{
     .abra{
         text-align: center;
         margin-top: 30px;
+    }
+    .ser h2{
+        font-size: 30px;
+        font-weight: 800;
+       align-items: center;
+       margin-left: -165%;
+       display: inline;
+       text-align: center;
     }
 }       
