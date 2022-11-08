@@ -9,7 +9,7 @@ html{
 }
 body{
 
-    background: black;
+    background: rgb(0, 0, 0);
     color: white;
     overflow-x:hidden;
 }
@@ -184,11 +184,11 @@ transform: translateY(-10px);
     color:#efede6;
     text-align:center;
 }
-
 #feedback{
     margin-top: -130px;
 }
 .rvp{
+   
     width:50vw;
     height:50vh;
     margin: 10vh auto;
@@ -197,7 +197,7 @@ transform: translateY(-10px);
     background-color:  #4e392f;
 }
 .ivm{
-   
+  
     font-size:20px;
     color:#efede6;
     text-align:center;
@@ -332,6 +332,7 @@ hr{
     }
 
    footer{
+    /* margin-top: 20%; */
     text-align: center;
      background-color: rgb(24, 24, 32);
    }
@@ -365,11 +366,9 @@ text-decoration: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .copy a{
     color: #f04623;
 }
-
        @media only screen and (max-width:850px){
         #header{
         background-image:url(images/phone.jpg);
@@ -454,7 +453,7 @@ text-decoration: none;
         border: 2px solid rgb(246, 246, 247);
         padding: .5em;
         background-color:  #4e392f;
-        margin-top: -60px;
+        margin-top: 20%;
     }
     .header-text{
         margin-top: 10%;
@@ -481,7 +480,7 @@ text-decoration: none;
         display:flex;
         align-items: center;
         justify-content: center;
-       margin-top: -12%;
+       margin-top: 5%;
     }
     .swiper{
         width:80%;
@@ -517,7 +516,7 @@ text-decoration: none;
     }
     footer{
         text-align: center;
-        margin-top: 50px;
+        margin-top: 25%;
        }
        footer a:link{
     text-decoration: none;
