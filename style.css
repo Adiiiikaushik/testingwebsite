@@ -393,9 +393,9 @@ text-decoration: none;
         
         }
         .logo{
-            width:40vw;
+            width:35vw;
             height:auto;
-            margin-right: 47%; 
+            margin-right: 49%; 
         }
         .header-text{
             padding-top:12px ;
@@ -403,7 +403,7 @@ text-decoration: none;
          nav .fas{
            color: #f86f2a;
             display:block;
-            font-size:17px;
+            font-size:25px;
             margin-right:20px;
             cursor: pointer;
             
