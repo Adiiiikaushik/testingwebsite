@@ -184,6 +184,10 @@ transform: translateY(-10px);
     color:#efede6;
     text-align:center;
 }
+
+#feedback{
+    margin-top: -130px;
+}
 .rvp{
     width:50vw;
     height:50vh;
