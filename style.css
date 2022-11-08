@@ -361,6 +361,11 @@ text-decoration: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.copy a{
+    color: #f04623;
+}
+
        @media only screen and (max-width:850px){
         #header{
         background-image:url(images/phone.jpg);
