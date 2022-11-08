@@ -254,11 +254,12 @@ hr{
        }
        .sub{
         font-style:normal;
+        font-size: medium;
         height: 2vh;
        }
     
        .icons{
-        margin-top:30px;
+        margin-top:10px;
        }
        .icons a{
         text-decoration:none;
@@ -304,8 +305,9 @@ hr{
     
     }
     .swiper{
-        width:80%;
+        width:50%;
         height:fit-content; 
+        margin-top: -100px;
     }
     .swiper-slide img{
         width:100%;
@@ -325,6 +327,40 @@ hr{
         margin-top: 30px;
     }
 
+   footer{
+    text-align: center;
+     background-color: rgb(24, 24, 32);
+   }
+   footer a:link{
+text-decoration: none;
+   }
+ 
+   .imagess{
+    width:40px;
+    height: auto;
+   }
+   h3{
+    font-size: large;
+   }
+   .copy{
+    height: 5vh;
+    background-color: rgb(17, 17, 18);
+    margin-bottom:0px;
+   }
+   .copy span{
+    font-size: auto;
+  background: -webkit-linear-gradient(#f04623, #f8a72a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent ;
+
+}
+.yo span{
+    
+    font-size:auto;
+    background: -webkit-linear-gradient(#f04623, #f8a72a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
        @media only screen and (max-width:850px){
         #header{
         background-image:url(images/phone.jpg);
@@ -409,7 +445,7 @@ hr{
         border: 2px solid rgb(246, 246, 247);
         padding: .5em;
         background-color:  #4e392f;
-        margin-top: 10px;
+        margin-top: -60px;
     }
     .header-text{
         margin-top: 10%;
@@ -466,8 +502,19 @@ hr{
         font-size: 30px;
         font-weight: 800;
        align-items: center;
-       margin-left: -165%;
+       margin-left: -8vw;
        display: inline;
        text-align: center;
     }
+    footer{
+        text-align: center;
+        margin-top: 50px;
+       }
+       footer a:link{
+    text-decoration: none;
+       }
+       .imagess{
+        width:40px;
+        height: auto;
+       }
 }       
