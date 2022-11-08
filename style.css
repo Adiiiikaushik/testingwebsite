@@ -395,7 +395,7 @@ text-decoration: none;
         .logo{
             width:35vw;
             height:auto;
-            margin-right: 49%; 
+            margin-right: 55%; 
         }
         .header-text{
             padding-top:12px ;
@@ -404,7 +404,7 @@ text-decoration: none;
            color: #f86f2a;
             display:block;
             font-size:25px;
-            margin-right:20px;
+            /* margin-right:20px; */
             cursor: pointer;
             
 
