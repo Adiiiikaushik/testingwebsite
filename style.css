@@ -111,6 +111,8 @@ margin-top:  20px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .ser div{
     background:  -webkit-linear-gradient(#d3bc47, #f86f2a);
@@ -150,8 +152,8 @@ transform: translateY(-10px);
     grid-gap: 40px;
     margin-top: 50px;
     text-align:center;
-    margin-left:1%;
-    margin-right:1%;
+    margin-left:5%;
+    margin-right:5%;
 }
 .nvm div{
     background:  -webkit-linear-gradient(#d3bc47, #f86f2a);
@@ -391,10 +393,9 @@ text-decoration: none;
         
         }
         .logo{
-            width:50vw;
+            width:40vw;
             height:auto;
-            /* margin-top: -90px; */
-            /* margin-left: 70%; */
+            margin-right: 47%; 
         }
         .header-text{
             padding-top:12px ;
@@ -402,9 +403,10 @@ text-decoration: none;
          nav .fas{
            color: #f86f2a;
             display:block;
-            font-size:25px;
+            font-size:17px;
             margin-right:20px;
             cursor: pointer;
+            
 
         }
          nav ul{
@@ -426,6 +428,7 @@ text-decoration: none;
             position:absolute;
             top:25px;
             left:25px; 
+            /* width: 1vw; */
             cursor:pointer;
     }
   
@@ -453,7 +456,7 @@ text-decoration: none;
         border: 2px solid rgb(246, 246, 247);
         padding: .5em;
         background-color:  #4e392f;
-        margin-top: 20%;
+        margin-top: 25%;
     }
     .header-text{
         margin-top: 10%;
@@ -510,7 +513,7 @@ text-decoration: none;
         font-size: 30px;
         font-weight: 800;
        align-items: center;
-       margin-left: -8vw;
+       margin-left: -5vw;
        display: inline;
        text-align: center;
     }
